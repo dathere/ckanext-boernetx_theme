@@ -1,0 +1,39 @@
+// Convert pixels to rems
+// eg. for a relational value of 12px write rem(12)
+// Assumes $em-base is the font-size of <html>
+@function strip-units($value) {
+    @return ($value / ($value * 0 + 1));
+  }
+  
+  @function rem($pxval) {
+    @if not unitless($pxval) {
+      $pxval: strip-units($pxval);
+    }
+    $base: $font-size-base-px;
+    @if not unitless($base) {
+      $base: strip-units($base);
+    }
+    @return ($pxval / $base) * 1rem;
+  }
+  
+  @mixin breakpoint($class) {
+    @if $class == xs {
+      @media (max-width: 767px) { @content; }
+    }
+  
+    @else if $class == sm {
+      @media (min-width: 768px) { @content; }
+    }
+  
+    @else if $class == md {
+      @media (min-width: 992px) { @content; }
+    }
+  
+    @else if $class == lg {
+      @media (min-width: 1200px) { @content; }
+    }
+  
+    @else {
+      @warn "Breakpoint mixin supports: xs, sm, md, lg";
+    }
+  }
