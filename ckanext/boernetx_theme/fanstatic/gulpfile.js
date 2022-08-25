@@ -5,8 +5,8 @@ const gulp = require('gulp');
 const config = require('./config.json');
 
 // Include plugins.
-const sass = require('gulp-sass');
-const imagemin = require('gulp-imagemin');
+const sass_compiler = require('sass')
+const sass = require('gulp-sass')(sass_compiler);
 const plumber = require('gulp-plumber');
 const glob = require('gulp-sass-glob');
 const uglify = require('gulp-uglify');
@@ -70,22 +70,22 @@ gulp.task('css_dev', function() {
       .pipe(gulp.dest(config.css.dest));
 });
 
-// Compress images.
-gulp.task('images', function () {
-  return gulp.src(config.images.src)
-      .pipe(imagemin([
-        imagemin.gifsicle({interlaced: true}),
-        imagemin.jpegtran({progressive: true}),
-        imagemin.optipng({optimizationLevel: 5}),
-        imagemin.svgo({
-          plugins: [
-            {removeViewBox: false},
-            {cleanupIDs: false}
-          ]
-        })
-      ]))
-      .pipe(gulp.dest(config.images.dest));
-});
+// // Compress images.
+// gulp.task('images', function () {
+//   return gulp.src(config.images.src)
+//       .pipe(imagemin([
+//         imagemin.gifsicle({interlaced: true}),
+//         imagemin.mozjpeg({progressive: true}),
+//         imagemin.optipng({optimizationLevel: 5}),
+//         imagemin.svgo({
+//           plugins: [
+//             {removeViewBox: false},
+//             {cleanupIDs: false}
+//           ]
+//         })
+//       ]))
+//       .pipe(gulp.dest(config.images.dest));
+// });
 
 // Concat all JS files into one file and minify it.
 gulp.task('scripts', function() {
@@ -144,7 +144,7 @@ gulp.task('watch', function() {
 });
 
 // Compile for production.
-gulp.task('serve', gulp.parallel('css', gulp.series('scripts', 'removeTemporaryStorage') , 'images', 'removeSourceMaps'));
+gulp.task('serve', gulp.parallel('css', gulp.series('scripts', 'removeTemporaryStorage'), 'removeSourceMaps'));
 
 // Compile for development + Watch
 gulp.task('serve_dev', gulp.series(gulp.parallel('css_dev', gulp.series('scripts_dev', 'removeTemporaryStorage'))));
