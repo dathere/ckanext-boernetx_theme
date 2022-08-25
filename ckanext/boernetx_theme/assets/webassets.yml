@@ -1,4 +1,0 @@
-boernetx_theme-css:
-  filter: cssrewrite
-  contents:
-    - css/boernetx_theme.css
