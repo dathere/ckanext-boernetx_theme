@@ -1,0 +1,15 @@
+.hero .container .box .tags .tag {
+    color: #5E2E82 !important;  
+  
+    &:hover {
+      background-color: #ffc212;
+    }
+  }
+
+.hero .container .box .tags {
+  background-color: #030303;
+}
+
+.hero .container .box form {
+  background-color: #5E2E82; 
+}

@@ -1,0 +1,58 @@
+.masthead {
+    background-color: white;
+  }
+
+  .masthead .container {
+    .navbar-collapse {
+      ul>li {
+        a {
+          color: #5E2E82; 
+
+          &:hover {
+            background-color: #ffc212;
+            text-decoration: none;
+          }
+        }
+        &.active {
+          a {
+            background-color: #ffc212;
+          }
+        }
+      }
+    }
+  }
+
+  div.account-masthead {
+    background-color: #030303;
+    color: #5E2E82
+  }
+
+  div.account-masthead .container {
+    .account.avatar.authed {
+      ul > li > a{
+        color: #5E2E82;
+
+        &:hover {
+          color: #ffc212
+        }
+      }
+    }
+  }
+
+  header.navbar > div.container {
+    form.site-search .field {
+        input {
+          color: #360808;
+          background-color: #ffc212;
+          border: 2px solid #ffff;
+          border-radius: 30px;
+          padding: 0 60px 0 20px;
+          height: 35px;
+          font-family: Montserrat;
+          font-style: italic;
+          font-weight: 300;
+          font-size: 1em;
+        }
+    }
+
+  }

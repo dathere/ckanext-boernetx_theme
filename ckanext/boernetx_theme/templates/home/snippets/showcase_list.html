@@ -1,0 +1,28 @@
+{#
+Displays a list of showcases.
+
+packages       - A list of showcases to display.
+list_class     - The class name for the list item.
+item_class     - The class name to use on each item.
+truncate       - The length to trucate the description to (default: 180)
+truncate_title - The length to truncate the title to (default: 80).
+
+{% snippet 'home/snippets/showcase_list.html', packages=h.get_recent_showcase_list() %}
+
+#}
+<div>
+{% block showcase_list %}
+    {% if packages %}
+    <ul class="media-grid list-unstyled">
+    {% for package in packages[0:2] %}
+        {% snippet 'home/snippets/showcase_item.html', package=package, list_class=list_class, item_class=item_class, truncate=truncate, truncate_title=60 %}
+    {% endfor %}
+    </ul>
+    <div class="col-md-12 col2">
+        <div class="view-more">
+        <a href="/showcase/?q=&sort=views_recent+desc">View More ({{ packages|length }})</a>
+        </div>
+    </div>
+    </div>
+    {% endif %}
+{% endblock %}

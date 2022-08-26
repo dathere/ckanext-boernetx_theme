@@ -3,7 +3,7 @@ html {
   }
   
   body {
-    font-family: Lato, Helvetica, Arial, sans-serif;
+    font-family: Montserrat, Lato, Helvetica, Arial, sans-serif;
     font-weight: 400;
     background: none;
     font-size: rem(16px);
@@ -43,42 +43,20 @@ html {
     font-size: rem(12px);
   }
   
-  .main a:not(.btn):not(.alert-link):not(.tag) {
-    color: $qg-blue-dark;
-    text-decoration: underline;
+  // .main a:not(.btn):not(.alert-link):not(.tag) {
+  //   color: $qg-blue-dark;
+  //   text-decoration: underline;
   
-    &:hover {
-      color: $qg-blue-dark1;
-      text-decoration: underline;
-    }
+  //   &:hover {
+  //     color: $qg-blue-dark1;
+  //     text-decoration: underline;
+  //   }
   
-    &.label {
-      color: white;
-    }
-  }
-  
-  .tag {
-    text-decoration: underline;
-  
-    &:hover {
-      text-decoration: underline;
-      color: white;
-    }
-  }
-  
-  .nav-item {
-    &.active {
-      a {
-        color: white;
-  
-        &:hover {
-          color: white;
-          text-decoration: none;
-        }
-      }
-    }
-  }
-  
+  //   &.label {
+  //     color: white;
+  //   }
+  // }
+
   .btn {
     text-decoration: none;
     line-height: 1.5;
