@@ -1,15 +1,67 @@
-.hero .container .box .tags .tag {
-    color: #5E2E82 !important;  
+.hero .container .box {
+  .tags {
+    background-color: #030303;
+
+    .tag {
+      color: #5E2E82 !important;  
+      border: 0.5px solid #ffff;
+      border-radius: 30px;
+      font-style: italic;
+      font-weight: 300;
   
-    &:hover {
-      background-color: #ffc212;
+      &:hover {
+        background-color: #ffc212;
+      }
     }
   }
 
-.hero .container .box .tags {
-  background-color: #030303;
+  form {
+    background-color: #5E2E82; 
+
+    div > input {
+      color: #360808;
+      background-color: #ffc212;
+      border: 2px solid #ffff;
+      border-radius: 30px;
+      padding: 0 60px 0 20px;
+      height: 60px;
+      font-family: Montserrat;
+      font-style: italic;
+      font-weight: 300;
+      font-size: 1em;
+    }
+  }
 }
 
-.hero .container .box form {
-  background-color: #5E2E82; 
+.search {
+  padding-top: 150px;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    min-height: 500px;
+    background: url('/base/images/Document.png');
+  }
+  .container .row2 {
+    .col-md-5 {
+      float: none;
+
+      a {
+        color: #793ca8;
+      }
+    }
+
+    .col-md-4 {
+      display: inline-block;
+      width: 50%;
+      padding-bottom: 15px;
+
+      h2 {
+        color: #793ca8;
+      }
+      .purp-line {
+        border: 3px solid #ffc212;
+      }
+    }
+  }
 }

@@ -16,7 +16,10 @@ class BoernetxThemePlugin(plugins.SingletonPlugin):
         toolkit.add_resource('webassets',
             'boernetx_theme')
 
-    # ITemaplateHelpers
+    # ITemplateHelpers
 
     def get_helpers(self):
-        return {"get_banner_image": h.get_banner_image}
+        return {
+            "boerne_get_showcases": h.get_showcases,
+            "boerne_recent_datasets": h.recent_dataset
+        }

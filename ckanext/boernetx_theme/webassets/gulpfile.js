@@ -62,7 +62,7 @@ gulp.task('css_dev', function() {
         }}))
       .pipe(sourcemaps.init())
       .pipe(sass({
-        outputStyle: 'nested',
+        outputStyle: 'compact',
         errLogToConsole: true
       }))
       .pipe(postcss(postcssPlugins))

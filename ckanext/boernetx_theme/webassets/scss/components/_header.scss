@@ -28,13 +28,21 @@
   }
 
   div.account-masthead .container {
-    .account.avatar.authed {
-      ul > li > a{
-        color: #5E2E82;
+    div ul>li>a {
+      color: #5E2E82;
 
-        &:hover {
-          color: #ffc212
-        }
+      &:hover {
+        color: #ffc212
+      }
+    }
+    nav ul>li>a{
+      color: #5E2E82;
+
+      &:hover {
+        color: #ffc212
+      }
+      &.sub {
+        font-weight: bold;
       }
     }
   }

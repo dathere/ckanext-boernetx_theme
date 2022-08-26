@@ -6,8 +6,7 @@
 <br>
 <h2 class="heading">Recent Datasets</h2>
 <hr class="purp-line">
-{# {% set datasets = h.boerne_recent_datasets(100) %} #}
-{% set datasets = '' %}
+{% set datasets = h.boerne_recent_datasets(100) %}
 <div class="col-md-12 col2">
 <ul class="dataset-grid list-unstyled">
     {% for dataset in datasets[0:4] %}
