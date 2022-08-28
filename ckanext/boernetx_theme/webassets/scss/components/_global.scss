@@ -128,36 +128,46 @@ html {
   }
   
   .btn-primary, .btn-primary.dropdown-toggle, .open > .btn-primary.dropdown-toggle {
-    background-color: $qg-light-green;
-    border-color: $qg-light-green;
-    color: black;
+    border-color: $boernetx-white;
+    color: $boernetx-white;
+    font-weight: 700;
+    font-size: 13px;
+    text-decoration: none;
+    background-color: #192c4d;
+    border-radius: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    transition: all .3s ease-in-out;
+    max-width: 200px;
+    width: 100%;
+    margin: 1.25em auto;
   
-    &:focus, &:focus:active {
-      color: black;
-      background-color: $qg-light-green2;
-      border-color: $qg-light-green;
-      box-shadow: 0 0 0 rem(3.2px) rgba(136, 169, 44, .5);
-      outline: none;
-    }
+    // &:focus, &:focus:active {
+    //   color: black;
+    //   background-color: $qg-light-green2;
+    //   border-color: $qg-light-green;
+    //   box-shadow: 0 0 0 rem(3.2px) rgba(136, 169, 44, .5);
+    //   outline: none;
+    // }
   
-    &:active, &.active, &:focus:active, &.active:focus {
-      color: $qg-global-primary-darker;
-      background-color: $qg-light-green;
-      border-color: $qg-light-green;
-      box-shadow: none;
+    // &:active, &.active, &:focus:active, &.active:focus {
+    //   color: $qg-global-primary-darker;
+    //   background-color: $qg-light-green;
+    //   border-color: $qg-light-green;
+    //   box-shadow: none;
   
-      &:hover, &.hover {
-        background-color: $qg-light-green;
-        border-color: $qg-light-green;
-        color: black !important;
-      }
-    }
+    //   &:hover, &.hover {
+    //     background-color: $qg-light-green;
+    //     border-color: $qg-light-green;
+    //     color: black !important;
+    //   }
+    // }
   
-    &:hover, &.hover {
-      border-color: $qg-light-green;
-      background-color: $qg-light-green2;
-      color: black !important;
-    }
+    // &:hover, &.hover {
+    //   border-color: $qg-light-green;
+    //   background-color: $qg-light-green2;
+    //   color: black !important;
+    // }
   }
   
   .btn-secondary {

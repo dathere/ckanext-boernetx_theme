@@ -1,5 +1,9 @@
 $font-size-base-px: 16px;
 
+// Base variables
+$imagePath: "../../../base/images";
+
+
 // Colors
 $qg-global-primary: #85007a;
 $qg-global-primary-dark: #063652;
@@ -34,4 +38,13 @@ $qg-blue-dark: #13578b;
 $qg-blue-dark1: #06C;
 $qg-blue-dark2: #80b;
 $qg-red: #d9534f;
-$qg-yellow: yellow;
+
+
+$boernetx-yellow: #ffc212;
+$boernetx-purple: #5E2E82;
+$boernetx-black: #030303;
+$boernetx-white: #ffff;
+
+
+// Font
+$boernetx-main-font: Montserrat;

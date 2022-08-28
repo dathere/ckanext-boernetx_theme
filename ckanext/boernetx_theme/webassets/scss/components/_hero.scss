@@ -1,31 +1,31 @@
 .hero .container .box {
   .tags {
-    background-color: #030303;
+    background-color: $boernetx-black;
 
     .tag {
-      color: #5E2E82 !important;  
-      border: 0.5px solid #ffff;
+      color: $boernetx-purple !important;  
+      border: 0.5px solid $boernetx-white;
       border-radius: 30px;
       font-style: italic;
       font-weight: 300;
   
       &:hover {
-        background-color: #ffc212;
+        background-color: $boernetx-yellow;
       }
     }
   }
 
   form {
-    background-color: #5E2E82; 
+    background-color: $boernetx-purple; 
 
     div > input {
       color: #360808;
-      background-color: #ffc212;
-      border: 2px solid #ffff;
+      background-color: $boernetx-yellow;
+      border: 2px solid $boernetx-white;
       border-radius: 30px;
       padding: 0 60px 0 20px;
       height: 60px;
-      font-family: Montserrat;
+      font-family: $boernetx-main-font;
       font-style: italic;
       font-weight: 300;
       font-size: 1em;
@@ -40,14 +40,14 @@
 @media (min-width: 768px) {
   .hero {
     min-height: 500px;
-    background: url('/base/images/Document.png');
+    background: url('#{$imagePath}/Document.png');
   }
   .container .row2 {
     .col-md-5 {
       float: none;
 
       a {
-        color: #793ca8;
+        color: $boernetx-purple;
       }
     }
 
@@ -56,11 +56,16 @@
       width: 50%;
       padding-bottom: 15px;
 
-      h2 {
-        color: #793ca8;
+      a {
+        color: $boernetx-purple;
       }
+
+      h2 {
+        color: $boernetx-purple;
+      }
+      
       .purp-line {
-        border: 3px solid #ffc212;
+        border: 3px solid $boernetx-yellow;
       }
     }
   }
