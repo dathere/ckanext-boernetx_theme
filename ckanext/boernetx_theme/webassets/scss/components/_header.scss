@@ -66,20 +66,25 @@
 
 
 .main {
-  div.content_action > a {
+  div.content_action {
+    display: flex;
 
-    background-color: #192c4d;
-    border-color: $boernetx-white;
-    color: $boernetx-white;
-    border-radius: 100px;
-    font-weight: 500;
-    font-size: 15px;
-    text-decoration: none;
-    text-align: center;
-    transition: all .3s ease-in-out;
-    max-width: 200px;
-    width: 100%;
-  }
+  
+    a {
+
+      background-color: #192c4d;
+      border-color: $boernetx-white;
+      color: $boernetx-white;
+      border-radius: 100px;
+      font-weight: 500;
+      font-size: 15px;
+      text-decoration: none;
+      text-align: center;
+      transition: all .3s ease-in-out;
+      max-width: 200px;
+      width: 100%;
+    }
+  } 
 
   header {
     background-color: $boernetx-white;

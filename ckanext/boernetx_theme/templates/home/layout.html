@@ -26,8 +26,8 @@
                 <div class="span12 col1 showcase-container">
                   <div class="module-content box">
                     <h2 class="heading"><a href="/showcase">Showcases</a></h2>
-                    <p class="heading-explanation">See what our users are doing with open data. </p>		
-                    {% snippet 'home/snippets/showcase_list.html', packages=h.boerne_get_showcases(),  list_class=list_class, item_class=item_class, truncate=truncate, truncate_title=60 %}
+                    <span class="heading-explanation">See what our users are doing with open data. </span>		
+                    {% snippet 'home/snippets/showcase_list.html', showcases=h.boerne_get_showcases(),  list_class=list_class, item_class=item_class, truncate=truncate, truncate_title=60 %}
                   </div>
                 </div>
               </div>

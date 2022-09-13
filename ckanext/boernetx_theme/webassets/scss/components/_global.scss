@@ -80,6 +80,7 @@ html {
   
     &.btn-lg {
       font-size: rem(20px);
+      width: initial;
     }
   }
   
@@ -87,7 +88,21 @@ html {
     background-color: $qg-dark-grey;
     border-color: $qg-dark-grey;
     color: white;
-  
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    transition: all .3s ease-in-out;
+
+    &.btn-xs {
+      width: 10%;
+    }
+
+    &.pull-right {
+      width: initial;
+    }
+
     &:focus, &:focus:active {
       color: white;
       background: $qg-dark-grey2;
@@ -126,6 +141,86 @@ html {
       color: white !important;
     }
   }
+
+  .btn-cancel {
+    border-color: $boernetx-white;
+    color: $boernetx-white !important;
+    font-weight: 700;
+    font-size: 13px;
+    text-decoration: none;
+    background-color: #7a021f !important;
+    border-radius: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    transition: all .3s ease-in-out;
+    // max-width: 200px;
+    // width: 100%;
+    margin-bottom: 2px;
+  }
+
+  .cancel.btn-danger.pull-left {
+    font-weight: 700;
+    font-size: 13px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    transition: all .3s ease-in-out;
+    // max-width: 200px;
+    // width: 100%;
+  }
+
+  .btn-danger.pull-left {
+    font-weight: 700;
+    font-size: 13px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    transition: all .3s ease-in-out;
+    // max-width: 200px;
+    // width: 100%;
+  }
+
+  .btn-danger-edit-dataset {
+    border-color: $boernetx-white;
+    color: $boernetx-white !important;
+    font-weight: 700;
+    font-size: 13px;
+    text-decoration: none;
+    background-color: #7a021f !important;
+    border-radius: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    transition: all .3s ease-in-out;
+    width: 20%;
+  }
+
+  .btn-primary-edit-dataset {
+    width: 25% !important;
+  }
+
+  .btn-danger.purge-all {
+    font-weight: 700;
+    font-size: 13px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    transition: all .3s ease-in-out;
+    // max-width: 200px;
+    // width: 100%;
+  }
+
+  .btn-danger.btn-remove-url {
+    border-color: $boernetx-white;
+    color: $boernetx-white !important;
+    font-weight: 700;
+    font-size: 13px;
+    text-decoration: none;
+    background-color: #7a021f !important;
+    border-radius: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    transition: all .3s ease-in-out;
+  }
   
   .btn-primary, .btn-primary.dropdown-toggle, .open > .btn-primary.dropdown-toggle {
     border-color: $boernetx-white;
@@ -138,9 +233,8 @@ html {
     text-transform: uppercase;
     text-align: center;
     transition: all .3s ease-in-out;
-    max-width: 200px;
-    width: 100%;
-    margin: 1.25em auto;
+    // max-width: 200px;
+    // width: 100%;
   
     // &:focus, &:focus:active {
     //   color: black;
@@ -219,6 +313,21 @@ html {
       background-color: $qg-blue1;
       color: white !important;
     }
+  }
+
+  .btn-warning {
+    border-color: $boernetx-white;
+    color: $boernetx-white;
+    font-weight: 700;
+    font-size: 13px;
+    text-decoration: none;
+    background-color: $boernetx-yellow;
+    border-radius: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    transition: all .3s ease-in-out;
+    // max-width: 200px;
+    // width: 100%;
   }
   
   .btn-outline-dark {
