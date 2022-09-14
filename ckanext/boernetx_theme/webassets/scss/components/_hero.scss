@@ -1,0 +1,72 @@
+.hero .container .box {
+  .tags {
+    background-color: $boernetx-black;
+
+    .tag {
+      color: $boernetx-purple !important;  
+      border: 0.5px solid $boernetx-white;
+      border-radius: 30px;
+      font-style: italic;
+      font-weight: 300;
+  
+      &:hover {
+        background-color: $boernetx-yellow;
+      }
+    }
+  }
+
+  form {
+    background-color: $boernetx-purple; 
+
+    div > input {
+      color: #360808;
+      background-color: $boernetx-yellow;
+      border: 2px solid $boernetx-white;
+      border-radius: 30px;
+      padding: 0 60px 0 20px;
+      height: 60px;
+      font-family: $boernetx-main-font;
+      font-style: italic;
+      font-weight: 300;
+      font-size: 1em;
+    }
+  }
+}
+
+.search {
+  padding-top: 150px;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    min-height: 500px;
+    background: url('#{$imagePath}/Document.png');
+  }
+  .container .row2 {
+    .col-md-5 {
+      float: none;
+
+      a {
+        color: $boernetx-purple;
+      }
+    }
+
+    .col-md-4 {
+      display: inline-block;
+      width: 50%;
+      padding-bottom: 15px;
+
+      a {
+        color: $boernetx-purple;
+      }
+
+      h2 {
+        color: $boernetx-purple;
+      }
+      
+      .purp-line {
+        border: 3px solid $boernetx-yellow;
+      }
+    }
+  }
+}

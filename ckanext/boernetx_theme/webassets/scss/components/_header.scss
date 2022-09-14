@@ -1,0 +1,105 @@
+.masthead {
+    background-color: $boernetx-white;
+  }
+
+  .masthead .container {
+    .navbar-collapse {
+      ul>li {
+        a {
+          color: $boernetx-purple; 
+
+          &:hover {
+            background-color: $boernetx-yellow;
+            text-decoration: none;
+          }
+        }
+        &.active {
+          a {
+            background-color: $boernetx-yellow;
+          }
+        }
+      }
+    }
+  }
+
+  div.account-masthead {
+    background-color: $boernetx-black;
+    color: $boernetx-purple
+  }
+
+  div.account-masthead .container {
+    div ul>li>a {
+      color: $boernetx-white;
+
+      &:hover {
+        color: $boernetx-yellow
+      }
+    }
+    nav ul>li>a{
+      color: $boernetx-white;
+
+      &:hover {
+        color: $boernetx-yellow
+      }
+      &.sub {
+        font-weight: bold;
+      }
+    }
+  }
+
+  header.navbar > div.container {
+    form.site-search .field {
+        input {
+          color: #360808;
+          background-color: $boernetx-yellow;
+          border: 2px solid $boernetx-white;
+          border-radius: 30px;
+          padding: 0 60px 0 20px;
+          height: 35px;
+          font-family: $boernetx-main-font;
+          font-style: italic;
+          font-weight: 300;
+          font-size: 1em;
+        }
+    }
+  }
+
+
+.main {
+  div.content_action {
+    display: flex;
+
+  
+    a {
+
+      background-color: #192c4d;
+      border-color: $boernetx-white;
+      color: $boernetx-white;
+      border-radius: 100px;
+      font-weight: 500;
+      font-size: 15px;
+      text-decoration: none;
+      text-align: center;
+      transition: all .3s ease-in-out;
+      max-width: 200px;
+      width: 100%;
+    }
+  } 
+
+  header {
+    background-color: $boernetx-white;
+  }
+
+  .nav-tabs > li {
+    a {
+      color: $boernetx-purple;
+
+      &:hover {
+        background-color: $boernetx-yellow;
+      }
+    }
+    &.active > a {
+      background-color: $boernetx-yellow;
+    }
+  }
+}

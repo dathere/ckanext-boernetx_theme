@@ -1,0 +1,13 @@
+.homepage {
+    .module-search {
+      h3 {
+        color: $boernetx-yellow;
+      }
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .homepage.layout-1 .row1 .col2 {
+      bottom: unset
+    }
+  }
