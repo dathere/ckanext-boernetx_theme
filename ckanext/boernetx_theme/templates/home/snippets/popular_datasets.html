@@ -7,7 +7,7 @@
 <br>
 
 {% block package_list %}
-<ul id="popular-list" class="unstyled dataset-list">
+<ul id="popular-list" class="dataset-grid list-unstyled">
     {% block package_list_inner %}
     {% for package in popular_datasets %}
         {% set truncate_title = truncate_title or 50 %}
