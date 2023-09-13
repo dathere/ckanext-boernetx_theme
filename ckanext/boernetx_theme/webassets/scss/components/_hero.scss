@@ -3,25 +3,25 @@
     background-color: $boernetx-black;
 
     .tag {
-      color: $boernetx-purple !important;  
+      color: $boernetx-blue !important;  
       border: 0.5px solid $boernetx-white;
       border-radius: 30px;
       font-style: italic;
       font-weight: 300;
   
       &:hover {
-        background-color: $boernetx-yellow;
+        background-color: $boernetx-green;
       }
     }
   }
 
   form {
-    background-color: $boernetx-purple; 
+    background-color: $boernetx-blue; 
 
     div > input {
       color: #360808;
-      background-color: $boernetx-yellow;
-      border: 2px solid $boernetx-white;
+      background-color: $boernetx-white;
+      border: 2px solid $boernetx-green;
       border-radius: 30px;
       padding: 0 60px 0 20px;
       height: 60px;
@@ -45,9 +45,9 @@
   .container .row2 {
     .col-md-5 {
       float: none;
-
+     
       a {
-        color: $boernetx-purple;
+        color: $boernetx-blue;
       }
     }
 
@@ -57,15 +57,18 @@
       padding-bottom: 15px;
 
       a {
-        color: $boernetx-purple;
+        color: $boernetx-blue
+      }
+      .label-default{
+        color: $boernetx-white
       }
 
       h2 {
-        color: $boernetx-purple;
+        color: $boernetx-blue;
       }
       
       .purp-line {
-        border: 3px solid $boernetx-yellow;
+        border: 3px solid $boernetx-green;
       }
     }
   }
