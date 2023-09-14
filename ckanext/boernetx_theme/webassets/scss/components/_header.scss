@@ -6,16 +6,17 @@
     .navbar-collapse {
       ul>li {
         a {
-          color: $boernetx-purple; 
+          color: $boernetx-blue; 
 
           &:hover {
-            background-color: $boernetx-yellow;
+            background-color: $boernetx-blue;
+            color: white;
             text-decoration: none;
           }
         }
         &.active {
           a {
-            background-color: $boernetx-yellow;
+            background-color: $boernetx-blue;
           }
         }
       }
@@ -24,7 +25,7 @@
 
   div.account-masthead {
     background-color: $boernetx-black;
-    color: $boernetx-purple
+    color: $boernetx-blue
   }
 
   div.account-masthead .container {
@@ -32,14 +33,14 @@
       color: $boernetx-white;
 
       &:hover {
-        color: $boernetx-yellow
+        color: $boernetx-white
       }
     }
     nav ul>li>a{
       color: $boernetx-white;
 
       &:hover {
-        color: $boernetx-yellow
+        color: $boernetx-white
       }
       &.sub {
         font-weight: bold;
@@ -51,8 +52,8 @@
     form.site-search .field {
         input {
           color: #360808;
-          background-color: $boernetx-yellow;
-          border: 2px solid $boernetx-white;
+          background-color: $boernetx-blue;
+          border: 2px solid $boernetx-blue;
           border-radius: 30px;
           padding: 0 60px 0 20px;
           height: 35px;
@@ -92,14 +93,16 @@
 
   .nav-tabs > li {
     a {
-      color: $boernetx-purple;
+      color: $boernetx-blue;
 
       &:hover {
-        background-color: $boernetx-yellow;
+        background-color: $boernetx-blue;
+        color: $boernetx-white;
       }
     }
     &.active > a {
-      background-color: $boernetx-yellow;
+      background-color: $boernetx-blue;
+      color: $boernetx-white;
     }
   }
 }
