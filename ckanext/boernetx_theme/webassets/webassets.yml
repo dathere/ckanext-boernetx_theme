@@ -1,3 +1,10 @@
 boernetx_theme-css:
   contents:
     - css/styles.css
+
+boernetx_theme-img:
+  contents:
+    - img/*.png
+    - img/*.jpg
+    - img/*.jpeg
+    - img/*.ico
