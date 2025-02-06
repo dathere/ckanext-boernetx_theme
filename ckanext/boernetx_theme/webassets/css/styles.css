@@ -515,7 +515,7 @@ header.navbar > div.container form.site-search .field input {
 @media (min-width: 768px) {
   .hero {
     min-height: 500px;
-    background: url("../../../base/images/Document.png");
+    background: url("/img/Document.png");
   }
   .container .row2 .col-md-5 {
     float: none;

@@ -26,7 +26,7 @@ show_remove    - If True, show the remove button to remove showcase/dataset asso
         {% if image_url and not image_url.startswith('http') %}
             <img data-lazy="/uploads/showcase/{{ image_url }}" alt="{{ showcase.title }}" loading="lazy" class="media-image img-responsive">
         {% else %}
-            <img src="{{ image_url or h.url_for_static('/base/images/placeholder-group.png') }}" loading="lazy" alt="{{ showcase.title }}" class="media-image img-responsive">
+            <img src="{{ image_url or h.url_for_static('/img/placeholder-group.png') }}" loading="lazy" alt="{{ showcase.title }}" class="media-image img-responsive">
         {% endif %}
     {% endblock %}
     {% block title %}
